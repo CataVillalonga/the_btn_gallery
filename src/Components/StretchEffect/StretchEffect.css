@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+.stretchEffect-btn {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.stretchEffect-btn-a {
+  position: relative;
+  text-decoration: none;
+  border: 3px solid #E1332D;
+  color: #E1332D;
+  padding: 40px 80px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase; /* turns text to uppercase*/
+  font-weight: 300; /*makes font lighter*/
+  letter-spacing: -2px; /*negative values bring letter closer*/
+  transition: all 0.5s;
+}
+/*This time we don't need a psudo el since transition is only in properties NOT in the el*/
+
+.stretchEffect-btn-a:hover {
+  padding: 50px 90px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900; /*makes font stronger*/
+  letter-spacing: 10px;
+  border: 7px solid #E1332D;
+}
