@@ -1,7 +1,5 @@
 # Hello fellow Developer ! 
 
-![Image](https://media.giphy.com/media/xT5LMVK6hOc7brtsTm/giphy.gif)
-
 I created this project to practice some cool Css animations. I did them in the form of buttons that when hover create an effect, but don't be 
 confuse! All the Effect you will find in this project are not limited at all to only be use in buttons. 
 
@@ -18,7 +16,7 @@ Remember there is many different ways to accomplish the same result so if you fi
 - I created this React project using Vite (Is quite new to me too, but so far seems like a great alternative to the good all create-react-project).
 - Every animation was created using pure CSS and jsx to add the element in the DOM.
 
-##How to run the project :
+## How to run the project :
 
 - Clone the project to your machine
 - npm run dev will start the project in your localhost
@@ -30,3 +28,5 @@ Remember there is many different ways to accomplish the same result so if you fi
 - Every button has its own folder inside Components with it's own jsx and CSS file.
 
 Hope you enjoy learning CSS animations as much as I do :)
+
+![Image](https://media.giphy.com/media/xT5LMVK6hOc7brtsTm/giphy.gif)
