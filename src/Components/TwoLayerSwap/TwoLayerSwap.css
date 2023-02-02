@@ -1,0 +1,57 @@
+.twoLayerSwap-btn {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/**/
+.twoLayerSwap-btn-a {
+  text-decoration: none;
+  font-size: 25px;
+  border: 3px solid #262626;
+  font-family: sans-serif;
+  background: #262626;
+  color: transparent;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.twoLayerSwap-btn-a::before {
+  content: 'Hover me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffa65;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.twoLayerSwap-btn-a::after {
+  content: 'Hover me';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffa65;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translate(-100%,100%);
+}
+
+.twoLayerSwap-btn-a:hover:before {
+  transform: translate(100%,-100%);
+}
+.twoLayerSwap-btn-a:hover:after {
+  transform: translate(0);
+}
+
+

@@ -11,8 +11,8 @@
   text-decoration: none;
   border: 3px solid #E1332D;
   color: #E1332D;
-  padding: 40px 80px;
-  font-size: 40px;
+  padding: 20px 40px;
+  font-size: 25px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase; /* turns text to uppercase*/
   font-weight: 300; /*makes font lighter*/
@@ -22,9 +22,9 @@
 /*This time we don't need a psudo el since transition is only in properties NOT in the el*/
 
 .stretchEffect-btn-a:hover {
-  padding: 50px 90px;
+  padding: 30px 50px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900; /*makes font stronger*/
-  letter-spacing: 10px;
-  border: 7px solid #E1332D;
+  letter-spacing: 5px;
+  border: 5px solid #E1332D;
 }

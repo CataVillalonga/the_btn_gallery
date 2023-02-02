@@ -1,9 +1,9 @@
-import './rotating.css'
+import './Rotating.css'
 
 const Rotating = () => {
   return (
-    <div className="rotating_btn">
-      <a href="#" className="rotating_btn-a">Hover me</a>
+    <div className="rotating-btn">
+      <a href="#" className="rotating-btn-a">Hover me</a>
     </div>
   )
 }
