@@ -13,7 +13,7 @@ Remember there is many different ways to accomplish the same result so if you fi
 
 ## About the technologies : 
 
-- I created this React project using Vite (Is quite new to me too, but so far seems like a great alternative to the good all create-react-project).
+- I created this React project using Vite (Is quite new to me too, but so far seems like a great alternative to the good all create-react-app).
 - Every animation was created using pure CSS and jsx to add the element in the DOM.
 
 ## How to run the project :
