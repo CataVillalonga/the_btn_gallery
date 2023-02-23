@@ -3,7 +3,7 @@ const Home = () => {
     <>
       <header>The button gallery</header>
       <main>
-        <h1>Welcome to the button gallery Where you can see css animations !</h1>
+        <h1>Welcome to the Animations gallery Where you can see pure css put int action!</h1>
         <section>
           <h2>Please select the type of animations you want to see</h2>
           <div>
