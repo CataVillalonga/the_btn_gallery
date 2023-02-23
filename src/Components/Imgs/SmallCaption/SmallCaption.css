@@ -1,0 +1,46 @@
+.smallCaption-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.smallCaption-img {
+  width: 100%;
+  transition: all 0.5s;
+  border-radius: 20px 20px 0 0;
+}
+
+.smallCaption-caption {
+  position: absolute;
+  top:100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  background: black;
+}
+
+.smallCaption-caption-h1 {
+  text-transform: uppercase;  
+  margin: 0;
+  font-size: 25px;
+}
+
+.smallCaption-caption-p {
+ font-size: 18px;
+ text-transform: capitalize;
+}
+
+.smallCaption-container:hover .smallCaption-img {
+  transform: translateY(-20%);
+}
+
+.smallCaption-container:hover .smallCaption-caption {
+  transform: translateY(-20%);
+}

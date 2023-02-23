@@ -1,6 +1,7 @@
 .swipeCaption-container {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -8,11 +9,13 @@
 .swipeCaption-img {
   width: 100%;
   transition: all 0.5s;
+  border-radius: 20px;
 }
 
 .swipeCaption-caption {
   position: absolute;
-  top: 0;
+  border-radius: 20px;
+  bottom: 0;
   left: 0;
   height: 100%;
   width: 100%;
