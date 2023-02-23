@@ -1,0 +1,46 @@
+.fadeInCaption-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fadeInCaption-img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.fadeInCaption-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+}
+
+.fadeInCaption-caption-h1 {
+  text-transform: uppercase;  
+  margin: 0;
+}
+
+.fadeInCaption-caption-p {
+ font-size: 18px;
+ text-transform: capitalize;
+}
+
+.fadeInCaption-container:hover .fadeInCaption-caption{
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fadeInCaption-container:hover .fadeInCaption-img {
+  transform: scale(1.3) rotate(15deg);
+}

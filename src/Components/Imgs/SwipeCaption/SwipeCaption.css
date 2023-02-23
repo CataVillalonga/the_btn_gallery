@@ -1,0 +1,47 @@
+.swipeCaption-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipeCaption-img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.swipeCaption-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.swipeCaption-caption-h1 {
+  text-transform: uppercase;  
+  margin: 0;
+  font-size: 25px;
+}
+
+.swipeCaption-caption-p {
+ font-size: 18px;
+ text-transform: capitalize;
+}
+
+.swipeCaption-container:hover .swipeCaption-caption {
+  transform: translateX(0);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.swipeCaption-container:hover .swipeCaption-img {
+  transform: scale(1.3) rotate(-15deg);
+}

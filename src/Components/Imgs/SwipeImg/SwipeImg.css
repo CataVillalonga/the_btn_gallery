@@ -1,0 +1,46 @@
+.swipeImg-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipeImg-img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.swipeImg-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(89, 57, 41, 0.962);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.swipeImg-caption-h1 {
+  text-transform: uppercase;  
+  margin: 0;
+  font-size: 25px;
+}
+
+.swipeImg-caption-p {
+ font-size: 18px;
+ text-transform: capitalize;
+}
+
+.swipeImg-container:hover .swipeImg-img {
+  transform: translateX(100%);
+}
+
+.swipeImg-container:hover .swipeImg-caption {
+  transform: translateX(0);
+}
