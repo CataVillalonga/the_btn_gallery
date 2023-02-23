@@ -19,7 +19,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-span {
+.threeCircles-btn-span{
   position: absolute;
   left: 0;
   top: 0;
@@ -32,7 +32,7 @@ span {
   z-index: -1;
 }
 
-.threeCircles-btn-a:hover span {
+.threeCircles-btn-a:hover .threeCircles-btn-span {
   transform: scale(1);
   transition-delay: 0.4s;
 }

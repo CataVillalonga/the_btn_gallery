@@ -1,0 +1,70 @@
+.openingEffect-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.openingEffect-btn-a{
+  position: relative;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  letter-spacing: 2px;
+  /*To align text vertically and horizontaly*/
+  text-align: center;
+  line-height: 60px; /*to achive this align set this as the height*/
+  transition: all 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.openingEffect-btn-a:hover {
+  color: #272727;
+}
+
+.openingEffect-btn-a::before{ 
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 110%;
+  top: -3px;
+  left: -3px;
+  background: #20caff;
+  transition: all 0.5s;
+  z-index: -1;
+  mix-blend-mode: multiply;/* help two psudos to blend background color*/
+  transition: all 0.2s;
+  transform-origin: top;
+}
+
+.openingEffect-btn-a:hover:before{
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px)rotateX(75deg);
+}
+
+.openingEffect-btn-a::after{ 
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 3px;
+  left: 3px;
+  background: #ff7675;
+  color: white;
+  transition: all 0.5s;
+  z-index: -1;
+  mix-blend-mode: multiply;/* help two psudos to blend background color*/
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+
+.openingEffect-btn-a:hover:after{ 
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px)rotateX(-75deg);
+}

@@ -1,0 +1,52 @@
+.borderSwapp-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.borderSwapp-btn-a{
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fdc518;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.borderSwapp-btn-a::before{
+  content: '';
+  position: absolute;
+  height: 90px; /*extra 30px to make border lines bigger than link*/
+  width: 200px; /*same as link*/
+  top: -15px; /*this way 30 extra px of height are divided in 15px top and bottom*/
+  left: 0;
+  border-left: 2px solid red;
+  border-right: 2px solid #fdc518;
+  transition: all 0.4s;
+}
+
+.borderSwapp-btn-a::after{
+  content: '';
+  position: absolute;
+  height: 60px; /*same as link*/
+  width: 230px; /*extra 30px to make border lines bigger than link*/
+  top: 0; 
+  left: -15px;/*this way 30 extra px of height are divided in 15px left and right*/
+  border-top: 2px solid red;
+  border-bottom: 2px solid #fdc518;
+  transition: all 0.4s;
+  transition-delay: 0.4s;
+}
+
+.borderSwapp-btn-a:hover::before{
+  transform: rotateY(180deg);
+}
+
+.borderSwapp-btn-a:hover::after{
+  transform: rotatex(180deg);
+}

@@ -1,0 +1,67 @@
+.crackEffect-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crackEffect-btn-a {
+  position: relative;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 3px solid salmon;
+  color: salmon;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.crackEffect-btn-a:hover {
+  color: rgb(144, 135, 135);
+}
+
+.crackEffect-btn-a::before, .crackEffect-btn-a::after,
+.crackEffect-btn-a .crackEffect-btn-span::before, .crackEffect-btn-span::after{
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background: salmon;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.crackEffect-btn-a::before {
+  top: 0;
+  left: -25%;
+}
+
+.crackEffect-btn-a::after {
+  top: -100%;
+  left: 25%;
+}
+
+.crackEffect-btn-a:hover::before {
+  left: 0;
+}
+
+.crackEffect-btn-a:hover::after {
+  top:0
+}
+
+.crackEffect-btn-span:before {
+  top:100%;
+  right: 25%;
+}
+
+.crackEffect-btn-a:hover .crackEffect-btn-span:before {
+  top:0;
+}
+
+.crackEffect-btn-span:after {
+  top:0;
+  right: -25%;
+}
+
+.crackEffect-btn-a:hover .crackEffect-btn-span:after {
+  right: 0;
+}

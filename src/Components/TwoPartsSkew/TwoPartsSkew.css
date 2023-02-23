@@ -1,0 +1,57 @@
+.twoPartSkew-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.twoPartSkew-btn-a {
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+}
+.twoPartSkew-btn-a::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #ee5253;
+  top: -5px;
+  left: -1%;
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /*https://www.w3schools.com/cssref/func_cubic-bezier.php*/
+}
+
+.twoPartSkew-btn-a::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: blue;
+  top: 5px;
+  left: 52%;
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+}
+
+
+.twoPartSkew-btn-a:hover::before {
+  top: 0;
+  left: 50%;
+  transform: skew(0deg);
+}
+
+.twoPartSkew-btn-a:hover::after {
+  transform: skew(0);
+  left: 0;
+  top: 0;
+}

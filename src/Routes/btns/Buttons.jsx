@@ -1,3 +1,4 @@
+import './Buttons.css'
 import Rotating from "../../Components/Rotating/Rotating"
 import Swipe from "../../Components/Swipe/Swipe"
 import Xeffect from '../../Components/Xeffect/Xeffect'
@@ -10,7 +11,15 @@ import SwipeCircular from "../../Components/SwipeCircular/SwipeCircular"
 import RotateThreeLayers from "../../Components/RotateThreeLayers/RotateThreeLayers"
 import SwipeWithOppacity from "../../Components/SwipeWithOpasity/SwipeWithOppacity"
 import ThreeCircles from "../../Components/ThreeCircles/ThreeCircles"
-import './Buttons.css'
+import OpeningEffect from "../../Components/OpeningEffect/OpeningEffect"
+import CrackEffect from '../../Components/CrackEffect/CrackEffect'
+import BorderSwapp from '../../Components/BorderSwapp/BorderSwapp'
+import BorderGrowing from '../../Components/BorderGrowing/BorderGrowing'
+import RotatingLetter from '../../Components/RotatingLetter/RotatingLetter'
+import BorderAppear from '../../Components/BorderAppear/BorderAppear'
+import WavyEffect from '../../Components/WavyEffect/WavyEffect'
+import TwoCuts from '../../Components/TwoCuts/TwoCuts'
+import TwoPartsSkew from '../../Components/TwoPartsSkew/TwoPartsSkew'
 
 const Buttons = () => {
   return (
@@ -27,6 +36,15 @@ const Buttons = () => {
       <RotateThreeLayers />
       <SwipeWithOppacity />
       <ThreeCircles />
+      <OpeningEffect />
+      <CrackEffect />
+      <BorderSwapp />
+      <BorderGrowing />
+      <RotatingLetter />
+      <BorderAppear />
+      <WavyEffect />
+      <TwoCuts />
+      <TwoPartsSkew />
     </main>
   )
 }

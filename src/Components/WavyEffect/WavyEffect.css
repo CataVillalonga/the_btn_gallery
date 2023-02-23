@@ -1,0 +1,54 @@
+.wavyEffect-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.wavyEffect-btn-a {
+  position: relative;
+  text-decoration: none;
+  padding: 20px 40px;
+  color: #00aeff;
+  font-size: 25px;
+  border: 3px solid #00aeff;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.wavyEffect-btn-a:hover {
+  color: white;
+}
+
+.wavyEffect-btn-wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px); /*this position img and psudo bellow btn*/
+  background: #00aeff;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.wavyEffect-btn-a:hover .wavyEffect-btn-wave {
+  top: 0;
+}
+
+.wavyEffect-btn-wave::before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px; /*img is 22px height*/
+  background: url(wave.png);
+  animation: wavy 0.5s linear infinite;
+}
+
+/*Declaring an animation => making the image move as waves*/
+@keyframes wavy {
+  0% {background-position-x: 0}
+  100% {background-position-x: 118px;}
+}
