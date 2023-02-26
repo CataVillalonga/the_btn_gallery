@@ -17,6 +17,7 @@
   line-height: 60px;
   text-align: center;
   transition: all 0.2s;
+  overflow: hidden;
 }
 
 .twoCuts-btn-a:hover{

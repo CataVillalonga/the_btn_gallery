@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+} 
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .btns-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);

@@ -1,5 +1,6 @@
-import DisappearingCaption from '../../Components/Imgs/disappearingCaption/disappearingCaption'
+import DisapearingCap from '../../Components/Imgs/DisapearingCap/DisapearingCap'
 import FadeInCaption from '../../Components/Imgs/FadeInCaption/FadeInCaption'
+import MultipleHoverEffects from '../../Components/Imgs/MultipleHoverEffects/MultipleHoverEffects'
 import SmallCaption from '../../Components/Imgs/SmallCaption/SmallCaption'
 import SwipeCaption from '../../Components/Imgs/SwipeCaption/SwipeCaption'
 import SwipeImg from '../../Components/Imgs/SwipeImg/SwipeImg'
@@ -12,7 +13,8 @@ function Images() {
       <SwipeCaption />
       <SwipeImg />
       <SmallCaption />
-      <DisappearingCaption />
+      <DisapearingCap />
+      <MultipleHoverEffects />
     </div>
   )
 }
