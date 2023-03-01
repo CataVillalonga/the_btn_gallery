@@ -1,0 +1,16 @@
+import './MultipleFadein.css'
+
+function MultipleFadein() {
+  return (
+  <div className='multipleFadein-container'>
+    <img className='multipleFadein-img'src="https://images.unsplash.com/photo-1561728130-afd430af0493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Boat entering storm" />
+    <div className='multipleFadein-caption'>
+      <h2 className='multipleFadein-caption-h1'>Less wind greater views</h2>
+      <p className='multipleFadein-caption-p'>Less wind makes less waves. This creates a mirror effect on the water. </p>
+      <a href="#" className='multipleFadein-caption-a'>Read more</a>
+    </div>
+  </div>
+)
+}
+
+export default MultipleFadein

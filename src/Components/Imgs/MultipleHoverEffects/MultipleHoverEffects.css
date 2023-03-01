@@ -18,7 +18,7 @@
   left: 0;
   width: 150%;
   height: 200%;
-  background: rgb(248, 165, 179);
+  background: rgb(57, 57, 93);
   opacity: 0.5;
   border-radius: 20px;
   transition: all 0.25s;
@@ -61,7 +61,7 @@
   width: 80%;
   align-self: center;
   text-align: center;
-  transform: translate(-200px, 200px);
+  transform: translate(-300px, 300px);
   transition: all 0.25s;
   color: black;
 }
@@ -81,10 +81,10 @@
   align-self: center;
   transition: all 0.25s;
   font-size: 15px;
-  transform: translateY(100px);
+  transform: translateY(200px);
 }
 
 .multipleHover-container:hover .multipleHover-caption-a {
   transform: translateY(0);
-  transition-delay: 0.6s;
+  transition-delay: 0.5s;
 }

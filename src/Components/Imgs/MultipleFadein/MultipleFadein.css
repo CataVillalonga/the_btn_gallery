@@ -1,0 +1,96 @@
+.multipleFadein-container {
+  width: 400px;
+  height: 300px;
+  border-radius: 25px;
+  border: 5px solid rgb(42, 107, 102);
+  background: #444;
+  position: relative;
+  overflow: hidden;
+  
+}
+.multipleFadein-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #006266;
+  border-radius: 20px;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s;
+}
+.multipleFadein-container:hover::before{
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.5s;
+}
+
+.multipleFadein-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.5s;
+  transition-delay: 0.5s;/*when place in element will take on hover and hover away*/
+}
+
+.multipleFadein-container:hover .multipleFadein-img {
+  transform: scale(0);
+  transition-delay: 0s;/*when put in hover it will only take time in hover action*/
+}
+
+.multipleFadein-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.multipleFadein-caption-h1 {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.multipleFadein-caption-p {
+  font-size: 16px;
+  font-weight: 900;
+  width: 80%;
+  align-self: center;
+  text-align: center;
+  color: white;
+  opacity: 0;
+}
+
+.multipleFadein-caption-a {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  align-self: center;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.multipleFadein-container:hover .multipleFadein-caption-h1,
+.multipleFadein-container:hover .multipleFadein-caption-p,
+.multipleFadein-container:hover .multipleFadein-caption-a{ 
+  opacity: 1;
+  transition-delay: 1s;
+}
