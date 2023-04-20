@@ -6,6 +6,8 @@ import MultipleHoverEffects from '../../Components/Imgs/MultipleHoverEffects/Mul
 import SmallCaption from '../../Components/Imgs/SmallCaption/SmallCaption'
 import SwipeCaption from '../../Components/Imgs/SwipeCaption/SwipeCaption'
 import SwipeImg from '../../Components/Imgs/SwipeImg/SwipeImg'
+import ZoomOutFade from '../../Components/Imgs/ZoomOutFade/ZoomOutFade'
+import ZoomOutHover from '../../Components/Imgs/ZoomOutHover/ZoomOutHover'
 import './Images.css'
 
 function Images() {
@@ -19,6 +21,8 @@ function Images() {
       <MultipleHoverEffects />
       <MultipleEffectTwo /> 
       <MultipleFadein />
+      <ZoomOutHover />
+      <ZoomOutFade />
     </div>
   )
 }
